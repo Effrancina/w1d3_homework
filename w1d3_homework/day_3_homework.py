@@ -1,3 +1,6 @@
+from optparse import Values
+
+
 tasks = [
     { "description": "Wash Dishes", "completed": False, "time_taken": 10 },
     { "description": "Clean Windows", "completed": False, "time_taken": 15 },
@@ -42,6 +45,9 @@ print_one_task("Feed Cat")
 
 def mark_task_as_complete(description):
     for task in tasks:
-        if task["completed"] == False:
-        
+        if ["completed"] == False:
+            print(["completed"] = True)
+        elif ["completed"] == True:
+            print(task)
 mark_task_as_complete("Wash Dishes")
+
