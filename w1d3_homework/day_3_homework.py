@@ -44,38 +44,21 @@ def print_one_task(description):
 print_one_task("Feed Cat")
 
 # 6. Given a description update that task to mark it as complete.
-# Errors:
-# def mark_task_as_complete(description):
-#     for task in tasks:
-#         if ["completed"] == False:
-#             ["completed"] = True
-#         elif ["completed"] == True:
-#             print(task)
-# mark_task_as_complete("Wash Dishes")
 
-# This doesn't work, but no errors:
-# def mark_task_as_complete(description):
-#     for task in tasks:
-#         if task == False:
-#             task = True
-#         elif task == True:
-#             print(task)
-# mark_task_as_complete("Wash Dishes")
+def mark_task_as_complete(description):
+    for task in tasks:
+        if task["completed"] == False:
+           task["completed"] = True
 
-# Errors:
-# def mark_task_as_complete(description):
-#     for task in tasks:
-#         if task[0]["completed"] == True:
-#             print(task)
-#     else:
-#         print(task[0]["completed"] == True)
-# mark_task_as_complete("Wash Dishes")
+mark_task_as_complete("Wash Dishes")
 
 # 7.Add a task to the list
-tasks.append({
-    "description" : "Bake dessert", "completed" : True, "time_taken" : 40
-})
-print(tasks)
+def add_new_entry(entry):
+    tasks.append(entry)
+    print(tasks)
+add_new_entry({"description" : "Bake Cake"})
+
+
 
 
 
